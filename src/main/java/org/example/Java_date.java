@@ -66,5 +66,10 @@ public class Java_date {
         System.out.println(diffHour);
         long diffSeconds = ChronoUnit.SECONDS.between(start, end);
         System.out.println(diffSeconds);
+
+        // TASK
+        LocalDate newDate = localDate.plusWeeks(2);
+        int diff = localDate.compareTo(newDate);
+        System.out.println("The local date lies behind " + Math.abs(diff) + " days.");
     }
 }
